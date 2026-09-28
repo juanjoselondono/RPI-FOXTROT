@@ -1,0 +1,9 @@
+source;share/ybeb_2602_zulu/hook/pythonpath.ps1
+source;share/ybeb_2602_zulu/hook/pythonpath.dsv
+source;share/ybeb_2602_zulu/hook/pythonpath.sh
+source;share/ybeb_2602_zulu/hook/ament_prefix_path.ps1
+source;share/ybeb_2602_zulu/hook/ament_prefix_path.dsv
+source;share/ybeb_2602_zulu/hook/ament_prefix_path.sh
+source;../../build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.ps1
+source;../../build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.dsv
+source;../../build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.sh

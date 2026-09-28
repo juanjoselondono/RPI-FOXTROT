@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating ybeb_2602_zulu.egg-info
+writing ybeb_2602_zulu.egg-info/PKG-INFO
+writing dependency_links to ybeb_2602_zulu.egg-info/dependency_links.txt
+writing entry points to ybeb_2602_zulu.egg-info/entry_points.txt
+writing requirements to ybeb_2602_zulu.egg-info/requires.txt
+writing top-level names to ybeb_2602_zulu.egg-info/top_level.txt
+writing manifest file 'ybeb_2602_zulu.egg-info/SOURCES.txt'
+reading manifest file 'ybeb_2602_zulu.egg-info/SOURCES.txt'
+writing manifest file 'ybeb_2602_zulu.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages/ybeb-2602-zulu.egg-link (link to .)
+Installing ybeb_node script to /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/ybeb_2602_zulu
+
+Installed /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu
+running symlink_data
+creating /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ament_index
+creating /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ament_index/resource_index
+creating /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ament_index/resource_index/packages
+symbolically linking /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/resource/ybeb_2602_zulu -> /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ament_index/resource_index/packages
+symbolically linking /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/package.xml -> /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu

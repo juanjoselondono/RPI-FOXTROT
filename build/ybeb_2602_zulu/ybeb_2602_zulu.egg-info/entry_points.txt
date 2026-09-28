@@ -1,0 +1,4 @@
+[console_scripts]
+aeb_ttc.py = ybeb_2602_zulu.aeb_ttc:main
+supervisor.py = ybeb_2602_zulu.supervisor:main
+ybeb_node.py = ybeb_2602_zulu.ybeb_node:main

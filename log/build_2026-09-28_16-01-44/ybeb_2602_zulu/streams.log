@@ -1,0 +1,19 @@
+[2.081s] Invoking command in '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu': PYTHONPATH=/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/build --no-deps symlink_data
+[2.538s] running develop
+[2.820s] running egg_info
+[2.848s] writing ybeb_2602_zulu.egg-info/PKG-INFO
+[2.848s] writing dependency_links to ybeb_2602_zulu.egg-info/dependency_links.txt
+[2.851s] writing entry points to ybeb_2602_zulu.egg-info/entry_points.txt
+[2.851s] writing requirements to ybeb_2602_zulu.egg-info/requires.txt
+[2.852s] writing top-level names to ybeb_2602_zulu.egg-info/top_level.txt
+[2.907s] reading manifest file 'ybeb_2602_zulu.egg-info/SOURCES.txt'
+[2.910s] writing manifest file 'ybeb_2602_zulu.egg-info/SOURCES.txt'
+[2.939s] running build_ext
+[2.942s] Creating /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages/ybeb-2602-zulu.egg-link (link to .)
+[2.943s] Installing aeb_ttc.py script to /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/ybeb_2602_zulu
+[2.943s] Installing supervisor.py script to /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/ybeb_2602_zulu
+[2.944s] Installing ybeb_node.py script to /home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/ybeb_2602_zulu
+[2.944s] 
+[2.944s] Installed /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu
+[2.944s] running symlink_data
+[3.044s] Invoked command in '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu' returned '0': PYTHONPATH=/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/build --no-deps symlink_data

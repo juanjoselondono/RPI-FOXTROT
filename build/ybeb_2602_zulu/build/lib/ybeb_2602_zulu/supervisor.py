@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Joy
+from std_msgs.msg import Bool
+
+class ModeSupervisor(Node):
+    def __init__(self):
+        super().__init__('mode_supervisor')
+        
+        self.joy_sub = self.create_subscription(Joy, '/joy', self.joy_callback, 10)
+        
+        self.aeb_pub = self.create_publisher(Bool, '/aeb/state', 10)
+        self.wf_pub = self.create_publisher(Bool, '/wf/state', 10)
+        self.ftg_pub = self.create_publisher(Bool, '/ftg/state', 10)
+
+        self.aeb_active = True
+        self.wf_active = False
+        self.ftg_active = False
+        self.last_buttons = None
+
+        self.sync_timer = self.create_timer(1.0, self.publish_states)
+        self.get_logger().info("Supervisor Online. X = Manual, A = Wall Follow, Y = Follow The Gap, B = Toggle AEB")
+
+    def joy_callback(self, msg):
+        if self.last_buttons is None:
+            self.last_buttons = msg.buttons
+            return
+
+        state_changed = False
+
+        if msg.buttons[0] == 1 and self.last_buttons[0] == 0:
+            self.wf_active = False
+            self.ftg_active = False
+            self.get_logger().info("MODE ENGAGED: Manual Joystick Navigation.")
+            state_changed = True
+
+        if msg.buttons[1] == 1 and self.last_buttons[1] == 0:
+            self.wf_active = True
+            self.ftg_active = False
+            self.get_logger().info("MODE ENGAGED: Autonomous Wall Following.")
+            state_changed = True
+            
+        if len(msg.buttons) > 3 and msg.buttons[3] == 1 and self.last_buttons[3] == 0:
+            self.ftg_active = True
+            self.wf_active = False
+            self.get_logger().info("MODE ENGAGED: Dynamic Follow The Gap.")
+            state_changed = True
+
+        if msg.buttons[2] == 1 and self.last_buttons[2] == 0:
+            self.aeb_active = not self.aeb_active
+            status = "ENABLED" if self.aeb_active else "DISABLED"
+            self.get_logger().warn(f"AEB System {status}.")
+            state_changed = True
+
+        if state_changed:
+            self.publish_states()
+
+        self.last_buttons = msg.buttons
+
+    def publish_states(self):
+        self.aeb_pub.publish(Bool(data=self.aeb_active))
+        self.wf_pub.publish(Bool(data=self.wf_active))
+        self.ftg_pub.publish(Bool(data=self.ftg_active))
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = ModeSupervisor()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info("Terminating Supervisor.")
+    finally:
+        node.destroy_node()
+        rclpy.try_shutdown()
+
+if __name__ == '__main__':
+    main()

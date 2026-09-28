@@ -1,0 +1,129 @@
+[0.229s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.230s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9fe6b9e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa004d280>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa004d280>>, mixin_verb=('build',))
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.292s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rpi5master/ros2_ws_2602'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/ybeb_2602_zulu) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ybeb_2602_zulu' with type 'ros.ament_python' and name 'ybeb_2602_zulu'
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.390s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 351 installed packages in /opt/ros/jazzy
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_target' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_clean_first' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'cmake_force_configure' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'ament_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'ybeb_2602_zulu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.468s] DEBUG:colcon.colcon_core.verb:Building package 'ybeb_2602_zulu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu', 'merge_install': False, 'path': '/home/rpi5master/ros2_ws_2602/src/ybeb_2602_zulu', 'symlink_install': True, 'test_result_base': None}
+[0.468s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.469s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.470s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rpi5master/ros2_ws_2602/src/ybeb_2602_zulu' with build type 'ament_python'
+[0.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('ybeb_2602_zulu', 'ament_prefix_path')
+[0.479s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/ament_prefix_path.ps1'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/ament_prefix_path.dsv'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/ament_prefix_path.sh'
+[0.482s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.482s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.816s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rpi5master/ros2_ws_2602/src/ybeb_2602_zulu'
+[0.816s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.816s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.896s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_dumb, upload_docs, install, bdist, check, dist_info, egg_info, build, install_scripts, install_headers, extract_messages, init_catalog, build_clib, develop, rotate, bdist_egg, saveopts, build_py, bdist_rpm, update_catalog, symlink_data, install_egg_info, editable_wheel, easy_install, install_data, clean, alias, build_scripts, compile_catalog, setopt, test, install_lib, sdist, build_ext, register, upload
+[2.403s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --always-unzip, --force-installation-into-system-dir, --install-layout, --editable, --build-directory, --upgrade, --allow-hosts, --help, --version, --install-dir, --uninstall, --always-copy, --site-dirs, --prefix, --dry-run, --egg-path, --index-url, --local-snapshots-ok, --script-dir, --optimize, --verbose, --quiet, --no-deps, --no-user-cfg, --exclude-scripts, --find-links, --user, --multi-version, --no-find-links, --zip-ok, --record
+[2.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu': PYTHONPATH=/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/build --no-deps symlink_data
+[3.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('ybeb_2602_zulu', 'pythonpath_develop')
+[3.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.ps1'
+[3.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu' returned '0': PYTHONPATH=/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/build --no-deps symlink_data
+[3.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.dsv'
+[3.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/build/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath_develop.sh'
+[3.366s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu' for CMake module files
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu' for CMake config files
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/bin'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/pkgconfig/ybeb_2602_zulu.pc'
+[3.368s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/lib/python3.12/site-packages'
+[3.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('ybeb_2602_zulu', 'pythonpath')
+[3.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath.ps1'
+[3.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath.dsv'
+[3.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/hook/pythonpath.sh'
+[3.370s] Level 1:colcon.colcon_core.environment:checking '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/bin'
+[3.370s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ybeb_2602_zulu)
+[3.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/package.ps1'
+[3.372s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/package.dsv'
+[3.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/package.sh'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/package.bash'
+[3.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/ybeb_2602_zulu/package.zsh'
+[3.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rpi5master/ros2_ws_2602/install/ybeb_2602_zulu/share/colcon-core/packages/ybeb_2602_zulu)
+[3.377s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.378s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.378s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.378s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.378s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.378s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rpi5master/ros2_ws_2602/install/local_setup.ps1'
+[3.380s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rpi5master/ros2_ws_2602/install/_local_setup_util_ps1.py'
+[3.382s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rpi5master/ros2_ws_2602/install/setup.ps1'
+[3.383s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rpi5master/ros2_ws_2602/install/local_setup.sh'
+[3.384s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rpi5master/ros2_ws_2602/install/_local_setup_util_sh.py'
+[3.385s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rpi5master/ros2_ws_2602/install/setup.sh'
+[3.386s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rpi5master/ros2_ws_2602/install/local_setup.bash'
+[3.387s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rpi5master/ros2_ws_2602/install/setup.bash'
+[3.388s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rpi5master/ros2_ws_2602/install/local_setup.zsh'
+[3.389s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rpi5master/ros2_ws_2602/install/setup.zsh'
